@@ -1,14 +1,17 @@
 # Instagram-trend-pakistan-2025
 # 🇵🇰 Instagram Trend Analysis — 2025 (Jan–Apr)  
 ## “Day in My Life — Student Edition” Trend in Pakistan  
-**By [Your Name]** — A-Level Student, Pakistan  
-*Data Analytics Portfolio Project for University Applications (US & Ireland)*
+**By Muhammad Rahim Omer** — A-Level Student, Pakistan  
+*Data Analytics Portfolio Project for My University Application*
 
 ---
 
 ## 🎯 Objective  
 To analyze the most viral Instagram trend in Pakistan in early 2025 — the *“Day in My Life — Student Edition”* Reels — and uncover:  
-> What drives engagement? Which universities dominate? What time/day performs best? What makes a “viral” student diary?
+> What drives engagement?
+> Which universities dominate?
+>  What time/day performs best?
+> What makes a “viral” student diary?
 
 ---
 
@@ -38,7 +41,7 @@ I manually sampled **100 top-performing Reels** (Jan 1 – Apr 15, 2025) using:
 
 - Instagram search: `#StudentVibes`, `#UniDiariesPK`, `#DayInMyLifePK`
 - Filter: “Recent Top” + “Most Liked”
-- Recorded in Google Sheets → exported as `instagram_student_trend_2025.csv`
+- Recorded in Google Sheets → exported as `instagram_student_trend_2025.
 
 ### 🔍 Fields Collected:
 - Creator @username
@@ -55,9 +58,7 @@ I manually sampled **100 top-performing Reels** (Jan 1 – Apr 15, 2025) using:
 ---
 
 ## 🧰 Tools Used
-- **Python**: Pandas, Matplotlib, Seaborn
-- **Platform**: Google Colab (Free)
-- **Visualization**: Charts saved as PNG
+- **Platform**: Google Colab 
 - **Data Source**: Manual sampling from Instagram public profiles
 
 ---
@@ -85,7 +86,6 @@ I manually sampled **100 top-performing Reels** (Jan 1 – Apr 15, 2025) using:
 > 4. **Punjab University** — 12%  
 > 5. **NUST** — 9%
 
-*(See chart: `top_unis.png`)*
 
 → Elite/private institutions dominate — better production quality + active student social media culture.
 
@@ -96,7 +96,6 @@ I manually sampled **100 top-performing Reels** (Jan 1 – Apr 15, 2025) using:
 > **Peak Engagement**: 8–10 PM PKT  
 > **Best Day**: **Sunday** (prep for week) and **Wednesday** (midweek slump content)
 
-*(See chart: `best_time_day.png`)*
 
 → Students scroll most after dinner + during study breaks.
 
@@ -153,45 +152,5 @@ Videos showing these moments had **2.3x more saves**:
 - “Authenticity” can be quantified: raw footage, natural lighting, unscripted moments
 - Micro-trends within trends (e.g., “stationery hauls”, “exam stress vlogs”) offer niche analysis opportunities
 
----
 
-## 📈 Visualizations Included
 
-![Top Universities](top_unis.png)  
-*Which campuses dominate the trend?*
-
-![Best Time to Post](best_time_day.png)  
-*When to post for max engagement*
-
-![Content Moments vs Saves](moments_vs_saves.png)  
-*What moments do users save the most?*
-
-![Caption Tone vs Engagement](caption_tone.png)  
-*How tone affects likes, comments, shares, saves*
-
----
-
-## 🐍 Python Analysis Code Snippet (Full code in repo)
-
-```python
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-df = pd.read_csv('instagram_student_trend_2025.csv')
-
-# Top Universities
-plt.figure(figsize=(10,6))
-sns.countplot(y='University', data=df, order=df['University'].value_counts().index)
-plt.title('Top Universities in #StudentVibes Trend')
-plt.xlabel('Number of Top Videos')
-plt.savefig('top_unis.png')
-plt.show()
-
-# Best Day to Post
-df['Day'] = pd.Categorical(df['Day'], categories=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'], ordered=True)
-plt.figure(figsize=(10,6))
-sns.barplot(x='Day', y='Likes', data=df, estimator='mean')
-plt.title('Avg Likes by Day of Week')
-plt.savefig('best_time_day.png')
-plt.show()
