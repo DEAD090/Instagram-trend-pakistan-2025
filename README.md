@@ -1,10 +1,9 @@
 # Instagram-trend-pakistan-2025
 # 🇵🇰 Instagram Trend Analysis — 2025 (Jan–Apr)  
-## “Day in My Life — Student Edition” Trend in Pakistan  
-**By Muhammad Rahim Omer** — A-Level Student, Pakistan  
+## “Analysing Trends— Student Edition” in Pakistan  
+**By Muhammad Rahim Omer** — A levels Student, Pakistan  
 *Data Analytics Portfolio Project for My University Application*
 
----
 
 ## 🎯 Objective  
 To analyze the most viral Instagram trend in Pakistan in early 2025 — the *“Day in My Life — Student Edition”* Reels — and uncover:  
@@ -13,7 +12,6 @@ To analyze the most viral Instagram trend in Pakistan in early 2025 — the *“
 >  What time/day performs best?
 > What makes a “viral” student diary?
 
----
 
 ## 🌐 Trend Background
 
@@ -33,7 +31,6 @@ Why it went viral:
 - Algorithm boost for “longer watch time” Reels
 - Brands partnering with student influencers
 
----
 
 ## 📥 Data Collection Method
 
@@ -55,28 +52,24 @@ I manually sampled **100 top-performing Reels** (Jan 1 – Apr 15, 2025) using:
 - Caption Tone (Funny, Emotional, Motivational, Neutral)
 - Location Tag (City/Campus)
 
----
 
 ## 🧰 Tools Used
 - **Platform**: Google Colab 
 - **Data Source**: Manual sampling from Instagram public profiles
 
----
 
 ## 🔍 Key Findings
 
 ### 1. 📈 Average Engagement (Top 100 Reels)
 
 | Metric   | Average     | Highest Recorded |
-|----------|-------------|------------------|
+ -------------------------------------------
 | Likes    | 89,400      | 620,000          |
 | Comments | 2,100       | 18,500           |
 | Saves    | 12,300      | 94,000           |
 | Shares   | 5,800       | 41,000           |
 
-→ **Saves are 5.8x higher than shares** → users are bookmarking for “daily routine inspo” → high perceived value.
-
----
+> **Saves are 5.8x higher than shares** → users are bookmarking for “daily routine inspo” → high perceived value.
 
 ### 2. 🎓 Top Universities Represented
 
@@ -87,9 +80,8 @@ I manually sampled **100 top-performing Reels** (Jan 1 – Apr 15, 2025) using:
 > 5. **NUST** — 9%
 
 
-→ Elite/private institutions dominate — better production quality + active student social media culture.
+> Elite/private institutions dominate — better production quality + active student social media culture.
 
----
 
 ### 3. ⏰ Best Time to Post
 
@@ -99,7 +91,6 @@ I manually sampled **100 top-performing Reels** (Jan 1 – Apr 15, 2025) using:
 
 → Students scroll most after dinner + during study breaks.
 
----
 
 ### 4. 🎵 Music Matters
 
@@ -109,7 +100,6 @@ I manually sampled **100 top-performing Reels** (Jan 1 – Apr 15, 2025) using:
 
 → Calm audio = longer watch time → favored by algorithm.
 
----
 
 ### 5. 📹 What Moments Get Saved Most?
 
@@ -123,7 +113,6 @@ Videos showing these moments had **2.3x more saves**:
 
 → **Practical, replicable content** = high save rate.
 
----
 
 ### 6. 😄 Caption Tone & Engagement
 
@@ -133,7 +122,6 @@ Videos showing these moments had **2.3x more saves**:
 
 → Different tones serve different engagement goals.
 
----
 
 ## 💡 Strategic Insights
 
